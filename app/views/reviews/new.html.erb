@@ -1,0 +1,7 @@
+<span><%= link_to "Return to Gem", restaurant_path(@restaurant) %></span>
+
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating, collection: [0, 1, 2, 3, 4, 5] %>
+  <%= f.submit %>
+<% end %>

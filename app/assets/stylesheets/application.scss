@@ -11,3 +11,13 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+ font-family: "Varela", sans-serif;
+ margin: 50px;
+}
+
+h1 {
+ font-family: "Varela", sans-serif;
+ text-align: center;
+}

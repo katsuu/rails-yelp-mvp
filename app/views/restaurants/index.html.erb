@@ -1,0 +1,9 @@
+<h1>Restaurant Gems</h1>
+
+<p><%= link_to 'Want to add a new gem?', new_restaurant_path %></p>
+
+<% @restaurants.each do |restaurant| %>
+  <p><%= link_to restaurant.name, restaurant_path(restaurant) %></p>
+  <p><%= restaurant.category.capitalize %></p>
+  <hr>
+<% end %>
